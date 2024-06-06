@@ -1,11 +1,11 @@
 import * as vscode from "vscode";
 
-export function findStylexCreateLineNumbers(document: vscode.TextDocument): number[] {
+export function findStylexLineNumbers(document: vscode.TextDocument): number[] {
   const stylexLineNumbers: number[] = [];
 
   for (let i = 0; i < document.lineCount; i++) {
     const lineText = document.lineAt(i).text;
-    if (lineText.includes("stylex.create")) {
+    if (lineText.includes("stylex.create") || lineText.includes("stylex.keyframes")) {
       stylexLineNumbers.push(i);
     }
   }
@@ -20,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
         return;
       }
       const { document } = vscode.window.activeTextEditor;
-      const stylexLineNumbers = findStylexCreateLineNumbers(document);
+      const stylexLineNumbers = findStylexLineNumbers(document);
 
       if (stylexLineNumbers.length > 0) {
         vscode.commands.executeCommand("editor.fold", {
@@ -37,7 +37,7 @@ export function activate(context: vscode.ExtensionContext) {
         return;
       }
       const { document } = vscode.window.activeTextEditor;
-      const stylexLineNumbers = findStylexCreateLineNumbers(document);
+      const stylexLineNumbers = findStylexLineNumbers(document);
 
       if (stylexLineNumbers.length > 0) {
         vscode.commands.executeCommand("editor.unfold", {
