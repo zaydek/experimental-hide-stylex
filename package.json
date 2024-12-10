@@ -2,7 +2,7 @@
   "name": "hide-stylex",
   "displayName": "Hide StyleX",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.89.0"
   },
@@ -15,11 +15,19 @@
     "commands": [
       {
         "command": "stylex-fold.foldAll",
-        "title": "StyleX: Fold All"
+        "title": "StyleX: Fold all levels"
       },
       {
         "command": "stylex-fold.unfoldAll",
-        "title": "StyleX: Unfold All"
+        "title": "StyleX: Unfold all levels"
+      },
+      {
+        "command": "stylex-fold.foldLevelThree",
+        "title": "StyleX: Fold level 3"
+      },
+      {
+        "command": "stylex-fold.unfoldLevelThree",
+        "title": "StyleX: Unfold level 3"
       }
     ]
   },
