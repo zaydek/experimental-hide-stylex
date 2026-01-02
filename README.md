@@ -4,12 +4,12 @@ A VS Code/Cursor extension to fold and unfold StyleX `stylex.create` and `stylex
 
 ## Commands
 
-| Command                    | Description                                        |
-| -------------------------- | -------------------------------------------------- |
-| `StyleX: Fold to Names`    | Fold style bodies → `item: { ... }`                |
-| `StyleX: Fold Entire Blocks` | Fold entire blocks → `stylex.create({ ... })`    |
-| `StyleX: Unfold to Names`  | Unfold blocks but keep bodies folded               |
-| `StyleX: Unfold All`       | Unfold everything completely                       |
+| Command                      | Description                                   |
+| ---------------------------- | --------------------------------------------- |
+| `StyleX: Fold to Names`      | Fold style bodies → `item: { ... }`           |
+| `StyleX: Fold Entire Blocks` | Fold entire blocks → `stylex.create({ ... })` |
+| `StyleX: Unfold to Names`    | Unfold blocks but keep bodies folded          |
+| `StyleX: Unfold All`         | Unfold everything completely                  |
 
 ## Installation
 
@@ -22,12 +22,12 @@ A VS Code/Cursor extension to fold and unfold StyleX `stylex.create` and `stylex
 
 Copy from `keybindings.example.json` to your keybindings (`Cmd+K Cmd+S` → click `{}` icon):
 
-| Shortcut      | Action                                |
-| ------------- | ------------------------------------- |
-| `Cmd+[`       | Fold to names (`item: { ... }`)       |
-| `Shift+Cmd+[` | Fold entire blocks                    |
-| `Cmd+]`       | Unfold to names (expand block only)   |
-| `Shift+Cmd+]` | Unfold everything                     |
+| Shortcut      | Action                              |
+| ------------- | ----------------------------------- |
+| `Cmd+[`       | Fold to names (`item: { ... }`)     |
+| `Shift+Cmd+[` | Fold entire blocks                  |
+| `Cmd+]`       | Unfold to names (expand block only) |
+| `Shift+Cmd+]` | Unfold everything                   |
 
 ## Supported Patterns
 
