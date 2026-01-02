@@ -1,0 +1,27 @@
+[
+  // StyleX: Fold: Cmd+[ shows names only (item: { ... })
+  // StyleX: Fold: Shift+Cmd+[ hides entire block (stylex.create({ ... }))
+  {
+    "key": "cmd+[",
+    "command": "stylex.foldNames",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "stylex.foldBlocks",
+    "when": "editorTextFocus"
+  },
+
+  // StyleX: Unfold: Cmd+] shows names (expands block, keeps bodies folded)
+  // StyleX: Unfold: Shift+Cmd+] shows everything
+  {
+    "key": "cmd+]",
+    "command": "stylex.unfoldNames",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "stylex.unfoldAll",
+    "when": "editorTextFocus"
+  }
+]

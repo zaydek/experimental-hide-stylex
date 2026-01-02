@@ -1,8 +1,8 @@
 {
-  "name": "hide-stylex",
-  "displayName": "Hide StyleX",
-  "description": "",
-  "version": "0.0.3",
+  "name": "stylex-fold",
+  "displayName": "StyleX Fold",
+  "description": "Fold and unfold StyleX style definitions",
+  "version": "1.0.4",
   "engines": {
     "vscode": "^1.89.0"
   },
@@ -16,20 +16,20 @@
   "contributes": {
     "commands": [
       {
-        "command": "stylex-fold.foldAll",
-        "title": "StyleX: Fold all levels"
+        "command": "stylex.foldNames",
+        "title": "StyleX: Fold to Names"
       },
       {
-        "command": "stylex-fold.unfoldAll",
-        "title": "StyleX: Unfold all levels"
+        "command": "stylex.foldBlocks",
+        "title": "StyleX: Fold Entire Blocks"
       },
       {
-        "command": "stylex-fold.foldLevelThree",
-        "title": "StyleX: Fold level 3"
+        "command": "stylex.unfoldNames",
+        "title": "StyleX: Unfold to Names"
       },
       {
-        "command": "stylex-fold.unfoldLevelThree",
-        "title": "StyleX: Unfold level 3"
+        "command": "stylex.unfoldAll",
+        "title": "StyleX: Unfold All"
       }
     ]
   },
@@ -51,8 +51,5 @@
     "@vscode/test-electron": "^2.3.9",
     "eslint": "^8.56.0",
     "typescript": "^5.3.3"
-  },
-  "dependencies": {
-    "prettier": "^3.3.0"
   }
 }
